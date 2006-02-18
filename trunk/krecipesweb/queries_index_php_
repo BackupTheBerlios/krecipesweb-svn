@@ -1,0 +1,45 @@
+<?php
+$mode = $_GET["mode"];
+
+switch ($mode)
+{
+case all:
+// Get all recipes
+$query = "SELECT id,title FROM recipes ORDER BY title"; 
+$result = mysql_query($query); 
+$number = mysql_num_rows($result);
+$i = 0;
+if ($number == 0) :
+print "No listings in Krecipes database!";
+elseif ($number > 0) :
+
+while ($i < $number):
+	    $id = mysql_result($result,$i,"id");
+	    $title = mysql_result($result,$i,"title");
+	    $title = unescape_and_decode( $title );
+	    print "<a href=\"view_recipe.php?id=$id\">$title</a><p></p>";
+	    $i++;
+	    endwhile;
+	    endif;
+	    break;
+default:
+// Get recipes listed by category
+$query = "SELECT id,name FROM categories ORDER BY name"; 
+$result = mysql_query($query); 
+$number = mysql_num_rows($result);
+$i = 0;
+if ($number == 0) :
+print "No listings in Krecipes database!";
+elseif ($number > 0) :
+
+while ($i < $number):
+	    $id = mysql_result($result,$i,"id");
+	    $name = mysql_result($result,$i,"name");
+	    $name = unescape_and_decode( $name );
+	    print "<a href=\"view_cat.php?id=$id&cat_name=$name\">$name</a><p></p>";
+	    $i++;
+	    endwhile;
+	    endif;
+
+}
+?>
