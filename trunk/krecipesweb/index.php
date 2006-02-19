@@ -1,8 +1,12 @@
 <?php
 
+require('config.php');
+require('functions.php');
+require('lang/'."$site_lang".'.php');
+
 function template($content) {
        global $main;
-        $filename = "templ/default/theme.htm";
+        $filename = 'templ/theme.htm';
 
        if(!$fd = fopen($filename, "r")) {
                 $error = 1;
@@ -17,16 +21,21 @@ function template($content) {
         } }
 
 
-function home() {
+function index() {
 global $main;
 include ("test.php");
 template("$data");
 }
 
+function cat() {
+global $main;
+include ("");
+template("$data");
+}
 
-switch($action) {
+switch($paget) {
         default:  // default switch
-        home();
+        index();
         break;
 }
 ?>
