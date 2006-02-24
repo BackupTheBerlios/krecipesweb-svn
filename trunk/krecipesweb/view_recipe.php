@@ -53,7 +53,7 @@ function doPopups() {
       links[i].onclick=function() {
         // Below - to open a full-sized window, just use: window.open(this.href);
         window.open(this.href, "",
-"top=40,left=40,width=<?php echo "$pwidth"?>,height=<?php echo "$pheight"?>,scrollbars");
+"top=40,left=40,width=800,height=700,scrollbars");
         return false;
       }
     }
