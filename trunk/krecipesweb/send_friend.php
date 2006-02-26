@@ -1,6 +1,6 @@
 <?php
 require "config.php";
-require('lang/'."$site_lang".'.php');
+require('lang/'."$site_lang".'/index.php');
 
 
 $recipe_id = $_POST["send_id"];

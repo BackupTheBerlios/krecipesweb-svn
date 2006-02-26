@@ -2,7 +2,7 @@
 
 require('config.php');
 require('functions.php');
-require('lang/'."$site_lang".'.php');
+require('lang/'."$site_lang".'/index.php');
 
 $recipe_id = $_GET["id"];
 

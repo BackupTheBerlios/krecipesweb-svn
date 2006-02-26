@@ -19,7 +19,7 @@ $dbname = 'KrecipesWeb';
 //Site title
 $site_title = 'Krecipes Cookbook';
 //Site language (see the 'lang' subdir for more languages)
-$site_lang = 'en';
+$site_lang = 'english';
 //URL to where the Frontend is located
 $url="http://localhost/krecipes/cvs/krecipesweb/";
 //URL to the view_recipe.php file
