@@ -1,9 +1,12 @@
 <?php
-
+if(!is_file("config.php")) { echo 'The configuration file does not exist.<br />
+You need to setup this frontend before you can use it.<br />
+<a href=setup.php>Click here to go to setup</a>';
+exit; } else {
 require('config.php');
 require('functions.php');
 require('lang/'."$site_lang".'/index.php');
-
+}
 
 ?>
 
