@@ -294,6 +294,31 @@ $fp = fopen ("config.php", "a");
 fputs ($fp,$content);
 fclose ($fp);
 
+echo "
+<table class='okbox'>
+  <thead>
+    <tr align='center'>
+<h2>Setup finished
+</h2>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+The setup of Krecipes Web Frontend finished successfully!<br />
+You should delete, rename or move the setup.php file from the base directory.<br /><br />
+Please dorp us a line or two at http://krecipesweb.berlios.de if you have any<br />
+problems or suggestions<p align='center'>
+<a href='index.php'>Click here to go to the mainpage.</a></p><br />
+Enjoy cooking!<br />
+The Krecipes Web Frontend Team
+
+</td>
+    </tr>
+  </tbody>
+</table>
+
+";
+
 
 }
 break;
