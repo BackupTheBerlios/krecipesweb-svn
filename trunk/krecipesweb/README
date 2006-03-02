@@ -26,7 +26,7 @@ KrecipesWeb - Readme
   Requirements:
     - php 4.1.0 or later
     - MySQL 3.23.32 or later
-    - Krecipes MySQL database version 0.85 or later
+    - Krecipes MySQL database version 0.9 or later
     - a web-browser could be useful... ;-)
 
 
