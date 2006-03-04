@@ -38,9 +38,9 @@ if ($sendrec == "ok")
 <FORM action="send_friend.php" method="POST" name='friendform' onSubmit="return validate()">
 <INPUT type="hidden" name="send_id" value="<?php echo $recipe_id; ?>">
 <INPUT type="text" name='sendername' size="20" value="<?php echo $lng_yourn ?>" onFocus="if (this.value=='<?php echo $lng_yourn ?>') this.value='';" onBlur="if (this.value=='') this.value='<?php echo $lng_yourn ?>';">&nbsp;&nbsp;
-<INPUT type="text" name="sendermail" size="20" value="<?php echo $lng_yourm ?>" onFocus="if (this.value=='<?php echo $lng_yourm ?>') this.value='';" onBlur="if (this.value=='') this.value='<?php echo $lng_yourm ?>';"><br/>
+<INPUT type="text" name="sendermail" size="20" value="<?php echo $lng_yourm ?>" onFocus="if (this.value=='<?php echo $lng_yourm ?>') this.value='';" onBlur="if (this.value=='') this.value='<?php echo $lng_yourm ?>';"><br />
 <INPUT type="text" name="friendname" size="20" value="<?php echo $lng_yourfn ?>" onFocus="if (this.value=='<?php echo $lng_yourfn ?>') this.value='';" onBlur="if (this.value=='') this.value='<?php echo $lng_yourfn ?>';">&nbsp;&nbsp;
-<INPUT type="text" name="friendmail" size="20" value="<?php echo $lng_yourfm ?>" onFocus="if (this.value=='<?php echo $lng_yourfm ?>') this.value='';" onBlur="if (this.value=='') this.value='<?php echo $lng_yourfm ?>';"><br>
+<INPUT type="text" name="friendmail" size="20" value="<?php echo $lng_yourfm ?>" onFocus="if (this.value=='<?php echo $lng_yourfm ?>') this.value='';" onBlur="if (this.value=='') this.value='<?php echo $lng_yourfm ?>';"><br />
 <INPUT type="submit" name="submit" value="  <?php echo  $lng_submit   ?>  ">
 <INPUT type="reset" name="reset" value="  <?php echo   $lng_reset  ?>  ">
 </FORM>
