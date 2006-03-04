@@ -8,10 +8,7 @@ mysql_select_db($dbname);
 function unescape_and_decode( $string )
 {
      $result = str_replace( ";@", ";", $string );
-     //Fixing norwegian special char.(only temp.- needs to be fixed properly)
-     $string = str_replace( "Ã¸", "ø", $string );
-     $string = str_replace( "Ã¦", "æ", $string );
-     $string = str_replace( "Ã¥", "å", $string );
+	$string = utf8_decode($string);
      return $string;
 }
 
