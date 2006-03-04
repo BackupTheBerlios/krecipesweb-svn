@@ -5,12 +5,16 @@ require('functions.php');
 require('lang/'."$site_lang".'/index.php');
 
 $recipe_id = $_GET["id"];
-
-$e = $_GET["e"];
-$serror = $_GET["error"];
-$sendrec = $_GET["sendrec"];
-
 if ( $recipe_id=="" ) die("$no_recipe_chosen");
+
+if (!isset($_GET["e"])) $e=""; else $e = $_GET["e"];
+
+if (!isset($_GET["error"])) $serror = ""; else $serror = $_GET["error"];
+
+if (!isset($_GET["sendrec"])) $sendrec = ""; else $sendrec = $_GET["sendrec"];
+
+
+
 
 require('view_recipe_functions.php');
 ?>
