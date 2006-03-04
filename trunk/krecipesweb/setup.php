@@ -79,6 +79,7 @@ echo '<td colspan=2>';
 echo '<td class=errorbox colspan=2><b>WARNING:</b><br />It is NOT recommended to run a database on the WWW with a root account with no password. You should change this at once!<br /><b>If you decide to continue you do so at your own risk!</b>';
 }
 echo '</td></tr>';
+$dbusername = $_POST["dbusername"];
 
 echo '</table><br />';
 
