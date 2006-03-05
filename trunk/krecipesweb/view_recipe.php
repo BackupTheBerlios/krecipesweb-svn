@@ -95,13 +95,8 @@ require('inc/top_table.php');
       <p><? echo "<b>$lng_recipe_yield:</b> $recipe_yield"; ?></p>
       <p><? echo "<b>$lng_recipe_prep:</b> $recipe_preptime"; ?></p>
       <p><? echo "<b>$lng_recipe_cat:</b> $categories"; ?></p>
-</tr>
-      <tr><td align="left"></td>
-      <td align="left"></td></tr>
+</tr>   
       
-      
-      </td>
-    </tr>
     <tr>
       <td width="100%" colspan="2">&nbsp;</td>
     </tr>
